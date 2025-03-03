@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 def load_data():
-    df = pd.read_csv("Laptop_Information.csv")
+    df = pd.read_csv(r"C:\Users\Preeti\.kaggle\laptop recommendation project\Laptop_Information.csv")
     df["Company_lower"] = df["Company"].str.lower()
     return df
 
